@@ -1,17 +1,17 @@
 import React from 'react'
-import Navbar from './components/Navbar'
+import Navbar from './components/navbar/Navbar'
 
 const App = () => {
   return (
-    <div>
-    <nav>
+    <div className='min-h-screen flex flex-col'>
+    <nav >
       <Navbar/>
     </nav>
-    <main>
-
+    <main className='flex-1 bg-[#F5FEFA]'>
+      main
     </main>
-    <footer>
-
+    <footer className='bg-indigo-800'>
+    footer
     </footer>      
     </div>
 
