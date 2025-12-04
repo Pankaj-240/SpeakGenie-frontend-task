@@ -1,5 +1,8 @@
 import React from 'react'
 import Navbar from './components/navbar/Navbar'
+import Icons from './components/main_action_icon.jsx/icons'
+import Horizontal_story_section from './components/horizontal_story_carousels/Horizontal_story_section'
+import Footer from './components/footer/footer'
 
 const App = () => {
   return (
@@ -7,11 +10,12 @@ const App = () => {
     <nav >
       <Navbar/>
     </nav>
-    <main className='flex-1 bg-[#F5FEFA]'>
-      main
+    <main className='flex-1 bg-[#F0FBF4]'>
+      <Icons/>
+      <Horizontal_story_section/>
     </main>
-    <footer className='bg-indigo-800'>
-    footer
+    <footer>
+    <Footer/>
     </footer>      
     </div>
 
