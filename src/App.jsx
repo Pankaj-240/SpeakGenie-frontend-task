@@ -1,24 +1,18 @@
-import React from 'react'
-import Navbar from './components/navbar/Navbar'
-import Icons from './components/main_action_icon.jsx/icons'
-import Horizontal_story_section from './components/horizontal_story_carousels/Horizontal_story_section'
-import Footer from './components/footer/footer'
-
+import Home from './pages/home/Home'
+import Quiz from './pages/custom_quiz/Quiz'
+import {Routes,Route} from 'react-router-dom'
+import Player from './pages/audio_story_player/Player'
+import Main from './components/main'
 const App = () => {
   return (
-    <div className='min-h-screen flex flex-col'>
-    <nav >
-      <Navbar/>
-    </nav>
-    <main className='flex-1 bg-[#F0FBF4]'>
-      <Icons/>
-      <Horizontal_story_section/>
-    </main>
-    <footer>
-    <Footer/>
-    </footer>      
+    <div>
+      <Routes>
+        <Route path='/' element={<Main/>}/>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/quiz' element={<Quiz/>}/>
+        <Route path='/player' element={<Player/>}/>
+      </Routes>
     </div>
-
   )
 }
 

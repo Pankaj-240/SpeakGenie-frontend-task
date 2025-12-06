@@ -1,11 +1,12 @@
 import React from 'react'
 import {Sparkles,MoveRight} from 'lucide-react'
-const Audio_stories = () => {
+
+const Practice_with_ai = () => {
   return (
     <div className='flex justify-between mt-4'>
       <div className='flex items-center gap-2'>
-        <Sparkles color='#16BF75' className='h-8 w-8 border border-green-100/30 p-1 rounded-full bg-[#E6F9F0]' />
-        <h2 className='text-xl font-semibold text-[#111827]'>Audio Stories</h2>
+        <div className='h-8 w-8 border border-green-100/30 flex justify-center items-center rounded-full bg-[#FFE4E6]'>🤖</div>
+        <h2 className='text-l font-semibold text-[#111827]'>Practice with AI </h2>
       </div>
       <div className='flex items-center'>
         <button className='text-[#16BF75] text-sm font-semibold'>Show all </button>
@@ -15,4 +16,4 @@ const Audio_stories = () => {
   )
 }
 
-export default Audio_stories
+export default Practice_with_ai
