@@ -1,6 +1,6 @@
 import Navbar from './components/navbar/Navbar'
-import Icons from './components/main_action_icon.jsx/icons'
-import Footer from './components/footer/footer'
+import Icons from './components/main_action_icon.jsx/Icons'
+import Footer from './components/footer/Footer'
 import MainBox from './components/main_box/MainBox'
 
 const Home = () => {
