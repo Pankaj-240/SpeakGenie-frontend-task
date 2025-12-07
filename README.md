@@ -80,12 +80,6 @@ src/
 | `/player` | Audio story player |
 | `/quiz` | Custom quiz creator |
 
-## Deployment
-
-Deployed on **Vercel**: https://speak-genie-frontend-task.vercel.app/
-
-- Auto-deploys on push to `main`
-- Build command: `npm run build`
 
 ## Important Details
 
