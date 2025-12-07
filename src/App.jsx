@@ -1,16 +1,16 @@
-import Home from './pages/home/Home'
-import Quiz from './pages/custom_quiz/Quiz'
+import HomePage from './pages/Home/HomePage'
+import CustomQuizPage from './pages/CustomQuiz/CustomQuizPage'
 import {Routes,Route} from 'react-router-dom'
-import Player from './pages/audio_story_player/Player'
+import AudioStoryPlayerPage from './pages/AudioStoryPlayer/AudioStoryPlayerPage'
 import Main from './components/Main'
 const App = () => {
   return (
     <div>
       <Routes>
         <Route path='/' element={<Main/>}/>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/quiz' element={<Quiz/>}/>
-        <Route path='/player' element={<Player/>}/>
+        <Route path='/home' element={<HomePage/>}/>
+        <Route path='/quiz' element={<CustomQuizPage/>}/>
+        <Route path='/player' element={<AudioStoryPlayerPage/>}/>
       </Routes>
     </div>
   )
