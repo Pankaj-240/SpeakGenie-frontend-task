@@ -2,7 +2,7 @@
 
 A modern React + JavaScript + Tailwind CSS implementation of the SpeakGenie learning platform UI.
 
-**[🚀 Live Demo](https://speakgenie-frontend-task.vercel.app/)**
+**[🚀 Live Demo](https://speak-genie-frontend-task.vercel.app/)**
 
 ## Overview
 
@@ -82,7 +82,7 @@ src/
 
 ## Deployment
 
-Deployed on **Vercel**: https://speakgenie-frontend-task.vercel.app/
+Deployed on **Vercel**: https://speak-genie-frontend-task.vercel.app/
 
 - Auto-deploys on push to `main`
 - Build command: `npm run build`
@@ -97,5 +97,4 @@ Deployed on **Vercel**: https://speakgenie-frontend-task.vercel.app/
 
 ---
 
-**Repository**: https://github.com/Pankaj-240/SpeakGenie-frontend-task  
 **Created by**: Pankaj Bisht
