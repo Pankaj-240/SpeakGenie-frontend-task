@@ -1,173 +1,101 @@
 # SpeakGenie Frontend Task
 
-A modern React + TypeScript + Tailwind CSS implementation of the SpeakGenie learning platform UI.
+A modern React + JavaScript + Tailwind CSS implementation of the SpeakGenie learning platform UI.
 
-## 🚀 Live Demo
+**[🚀 Live Demo](https://speakgenie-frontend-task.vercel.app/)**
 
-**[View Live on Vercel](https://speakgenie-frontend-task.vercel.app/)**
+## Overview
 
-## 📋 Overview
-
-This project recreates three key screens from the SpeakGenie platform:
+Recreates three key screens from SpeakGenie:
 - **Home Screen** - User dashboard with XP progress, action icons, and story carousels
-- **Audio Story Player** - Interactive audio story playback interface
+- **Audio Story Player** - Interactive audio story playback interface  
 - **Custom Quiz Creator** - Topic selection and difficulty configuration
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **React 18** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Build tool & dev server
-- **Tailwind CSS** - Styling
-- **React Router** - Client-side routing
-- **Lucide React** - Icons
+React 18 • JavaScript (JSX) • Vite • Tailwind CSS • React Router • Lucide React
 
-## 📁 Project Structure
-
-```
-Interview-Task/
-├── src/
-│   ├── pages/
-│   │   ├── Home/
-│   │   │   ├── HomePage.jsx
-│   │   │   └── components/
-│   │   │       ├── MainActionIcons/
-│   │   │       ├── MainBox/
-│   │   │       │   ├── AudioStories/
-│   │   │       │   ├── PracticeWithAI/
-│   │   │       │   └── PracticeWithHumans/
-│   │   │       ├── footer/
-│   │   │       └── navbar/
-│   │   ├── CustomQuiz/
-│   │   │   ├── CustomQuizPage.jsx
-│   │   │   └── components/
-│   │   │       ├── main/
-│   │   │       ├── navbar/
-│   │   │       └── footer/
-│   │   └── AudioStoryPlayer/
-│   │       ├── AudioStoryPlayerPage.jsx
-│   │       └── components/
-│   │           ├── main/
-│   │           ├── navbar/
-│   │           └── footer/
-│   ├── components/
-│   │   └── Main.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── assets/
-├── public/
-├── index.html
-├── vite.config.js
-├── package.json
-└── README.md
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 16+ 
-- npm or yarn
-
-### Installation
+## Quick Start
 
 ```bash
-# Clone the repository
+# Clone and install
 git clone https://github.com/Pankaj-240/SpeakGenie-frontend-task.git
 cd Interview-Task
-
-# Install dependencies
 npm install
 
-# Start development server
+# Development
 npm run dev
 
-# Open in browser: http://localhost:5173/
-```
-
-### Build for Production
-
-```bash
+# Production build
 npm run build
 ```
 
-## 🎯 Key Features
+## Project Structure
 
-✅ Responsive design for mobile, tablet, and desktop  
-✅ Clean, modular component architecture  
-✅ Full TypeScript type safety  
-✅ Utility-first Tailwind CSS styling  
-✅ Client-side routing with React Router  
-✅ Interactive carousels and UI elements  
+```
+src/
+├── pages/
+│   ├── Home/
+│   │   ├── HomePage.jsx                    # Main home page component
+│   │   └── components/
+│   │       ├── MainActionIcons/            # Video, Peer Call, Stories, AI icons
+│   │       ├── MainBox/
+│   │       │   ├── AudioStories/           # Story carousel cards
+│   │       │   ├── PracticeWithAI/         # AI practice cards
+│   │       │   └── PracticeWithHumans/     # Human practice cards
+│   │       ├── navbar/                     # Dashboard navbar + XP progress
+│   │       └── footer/                     # Footer component
+│   ├── CustomQuiz/
+│   │   ├── CustomQuizPage.jsx              # Quiz main page
+│   │   └── components/
+│   │       ├── main/                       # Quiz template cards
+│   │       ├── navbar/                     # Quiz navbar
+│   │       └── footer/                     # Quiz footer
+│   └── AudioStoryPlayer/
+│       ├── AudioStoryPlayerPage.jsx        # Player main page
+│       └── components/
+│           ├── main/                       # Story image, text display
+│           ├── navbar/                     # Player navbar
+│           └── footer/                     # Player controls
+├── components/
+│   └── Main.jsx                            # Landing page / router
+└── assets/                                 # Images and static files
+```
 
-## 📐 Design Decisions
+## Features
 
-### Component Organization
-- **Feature-based structure** - Each page owns its components
-- **PascalCase naming** - Consistent, clear naming convention
-- **Single responsibility** - Each component has one purpose
-- **Props-based configuration** - Reusable components
+✅ Responsive (mobile, tablet, desktop)  
+✅ Clean component architecture  
+✅ Feature-based folder structure  
+✅ Utility-first Tailwind CSS  
+✅ Client-side routing  
+✅ **UI-focused** - Most elements are visual (carousels, cards, progress bars)
 
-### Styling
-- **Tailwind utility-first** - No custom CSS bloat
-- **Mobile-first responsive** - Optimized for all screen sizes
-- **Consistent branding** - Green palette (#16BF75, #189F5A)
+## Routes
 
-## 📱 Responsive Coverage
-
-| Breakpoint | Status |
-|-----------|--------|
-| Mobile (< 640px) | ✅ Primary design |
-| Tablet (640px - 1024px) | ✅ Optimized |
-| Desktop (> 1024px) | ✅ Full-width |
-
-## 🔄 Routes
-
-| Route | Screen |
-|-------|--------|
+| Path | Screen |
+|------|--------|
 | `/` | Landing page |
 | `/home` | Home dashboard |
 | `/player` | Audio story player |
 | `/quiz` | Custom quiz creator |
 
-## 📦 Tech Details
+## Deployment
 
-- **Framework**: React 18 + Vite
-- **Language**: JavaScript/TypeScript
-- **Styling**: Tailwind CSS 3.x
-- **Routing**: React Router 6.x
-- **Icons**: Lucide React
+Deployed on **Vercel**: https://speakgenie-frontend-task.vercel.app/
 
-## 🚀 Deployment
+- Auto-deploys on push to `main`
+- Build command: `npm run build`
 
-Deployed on **Vercel** with automatic updates on every push to `main`.
+## Important Details
 
-**Live URL**: https://speakgenie-frontend-task.vercel.app/
-
-## 📋 Evaluation Criteria
-
-| Criteria | Status |
-|----------|--------|
-| UI Accuracy | ✅ Pixel-close implementation |
-| Code Quality | ✅ Clean, modular structure |
-| TypeScript | ✅ Full type safety |
-| Tailwind Usage | ✅ Utility-first, maintainable |
-| Responsiveness | ✅ Works on all devices |
-| Professionalism | ✅ Production-ready |
-
-## 🔗 Links
-
-- **GitHub Repository**: https://github.com/Pankaj-240/SpeakGenie-frontend-task
-- **Live Demo**: https://speakgenie-frontend-task.vercel.app/
-- **Assignment Brief**: SpeakGenie Frontend Engineer Interview Task
-
-## 📝 Notes
-
-- All screens use static data (no API backend required)
-- Mobile-first design approach
-- External images from SpeakGenie CDN
-- Routes accessible without authentication
+- **Static UI** - Focus on visual design and layout accuracy. UI elements (buttons, cards, progress bars) are display-only with no interactive functionality
+- **No backend** - Static data only, no API integration
+- **Mobile-first** - Optimized for small screens
+- **Responsive** - Adapts to all device sizes
+- **Images** - Uses SpeakGenie CDN
 
 ---
 
-**Created by**: Pankaj Bisht  
-**Last Updated**: December 7, 2025
+**Repository**: https://github.com/Pankaj-240/SpeakGenie-frontend-task  
+**Created by**: Pankaj Bisht
