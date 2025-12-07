@@ -1,5 +1,5 @@
 import React from 'react'
-import Bar from './bar'
+import Bar from './Bar'
 import Controls from './Controls'
 
 const Footer = () => {
